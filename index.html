@@ -9,14 +9,19 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Adex</title>
-  <meta name="title" content="Adex">
-  <meta name="description" content="This is a business agency html template made by codewithsadee">
+  <title>
+    الانجاز العاجل
+  </title>
+  <meta name="title" content="primeCode Development">
+  <meta name="description" content="This is a business agency html template made by ahmed abd elmohsen">
 
   <!-- 
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+ <!--=============== SWIPER CSS ===============-->
+ <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
   <!-- 
     - google font link
@@ -49,52 +54,67 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">
-        <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" class="logo-light">
+      <a href="" class="logo">
+        <span id="logo-text-light" class="logo-text-head logo-text-header-light">
+          الانجاز العاجل
+        </span>
+        <span id="logo-text-dark" class="logo-text-head logo-text-header-dark">
+          الانجاز العاجل
+        </span>
+        </a>
+        
+        <!-- <img src="./assets/images/logo-light.svg" width="74" height="24" alt="primeCode Development" class="logo-light">
 
-        <img src="./assets/images/logo-dark.svg" width="74" height="24" alt="Adex home" class="logo-dark">
-      </a>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
-          </a>
+          <img src="./assets/images/logo-dark.svg" width="74" height="24" alt="primeCode Development" class="logo-dark"> -->
+          
+          <nav class="navbar" data-navbar>
+            
+            <div class="navbar-top">
+              <!-- <a href="#" class="logo">
+                <img src="./assets/images/logo-light.svg" width="74" height="24" alt="primeCode Development">
+              </a> -->
+              <span  class="logo-text">
+                الانجاز العاجل
+              </span>
+          
 
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
         </div>
 
-        <ul class="navbar-list">
+        <ul id="navbar-list" class="navbar-list">
 
           <li>
-            <a href="#" class="navbar-link">Home</a>
+            <a href="HTTPs://wa.me/201097073008" data-lan="home" class="navbar-link main-en">الرئيسية</a>
+          </li>
+          <li>
+            <a href="#" data-lan="whyUs" class="navbar-link">لماذا نحن  </a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">About</a>
+            <a href="#about" data-lan="ourTeam" class="navbar-link">فريقنا</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Projects</a>
+            <a href="#project" data-lan="service" class="navbar-link">الخدمات</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Blog</a>
+            <a href="#" data-lan="who" class="navbar-link">من نحن </a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Contact</a>
+            <a href="HTTPs://wa.me/201097073008" data-lan="home" class="navbar-link main-ar">الرئيسية</a>
           </li>
 
         </ul>
+       
 
         <div class="wrapper">
-          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
+          <a href="info@primecode-dev.com" class="contact-link">info@primecode-dev.com</a>
 
-          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+          <a href="HTTPs://wa.me/201097073008 " class="contact-link">0226229733</a>
         </div>
 
         <ul class="social-list">
@@ -133,8 +153,12 @@
 
       </nav>
 
-      <a href="#" class="btn btn-primary">Free Trial</a>
-
+      <a href="#service" data-lan="who" class="btn btn-primary btn-primary-spicial">تواصل معنا</a>
+      <select id="language-change" onchange="lannguageChossed()" class="language-change">
+        <option >lan</option>
+        <option value="Ar">العربية</option>
+        <option value="En">english</option>
+      </select>
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
@@ -154,24 +178,33 @@
       <!-- 
         - #HERO
       -->
-
       <section class="section hero has-bg-image" aria-label="home"
         style="background-image: url('./assets/images/hero-bg.jpg')">
-        <div class="container">
+        <div class="container container-front">
 
           <div class="hero-content">
 
-            <h1 class="h1 hero-title">Crafting project specific solutions with expertise.</h1>
-
+            <!-- <h1 class="h1 hero-title">Crafting project specific solutions with expertise.</h1> -->
+            <h1  data-lan="exprience" class="h1 hero-title hiddenLeft">خبرة كبيرة فى مجال المحاماة
+              
+            </h1>
+<!-- 
             <p class="hero-text">
               We’re a creative company that focuses on establishing long-term relationships with customers.
-            </p>
+            </p> -->
 
+            <p  data-lan="exprienceP" class="hero-text hiddenLeft">
+سنين من الخبرة فى المحاماة والاستشارة جعلتنا رقم واحد فى مجالنا
+                نبذل قصارى جهدنا لنتميز على من حولنا
+
+</p>
             <div class="btn-wrapper">
 
-              <a href="#" class="btn btn-primary">Explore Now</a>
+              <!-- <a href="#feature" class="btn btn-primary">Explore Now</a> -->
+              <a data-lan="takeLook" href="#feature" class="btn btn-primary hiddenLeft">اطلع على اخر خدماتنا</a>
 
-              <a href="#" class="btn btn-outline">Contact Us</a>
+              <!-- <a href="HTTPs://wa.me/0226229733" class="btn btn-outline">Contact Us</a> -->
+              <a data-lan="contact" href="HTTPs://wa.me/0226229733" class="btn btn-outline hiddenLeft"> تواصل معنا</a>
 
             </div>
 
@@ -185,7 +218,7 @@
                 <li class="slider-item">
 
                   <figure class="img-holder" style="--width: 575; --height: 550;">
-                    <img src="./assets/images/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
+                    <img src="./assets/images/fotor-ai-20240220132750.jpg" width="575" height="550" alt="" class="img-cover">
                   </figure>
 
                 </li>
@@ -194,13 +227,13 @@
 
                   <div class="hero-card">
                     <figure class="img-holder" style="--width: 575; --height: 550;">
-                      <img src="./assets/images/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
+                      <img src="./assets/images/pexels-fauxels2-3182781.jpg" width="575" height="550" alt="hero banner"
                         class="img-cover">
                     </figure>
 
-                    <button class="play-btn" aria-label="play adex intro">
+                    <!-- <button class="play-btn" aria-label="play adex intro">
                       <ion-icon name="play" aria-hidden="true"></ion-icon>
-                    </button>
+                    </button> -->
                   </div>
 
                 </li>
@@ -208,7 +241,8 @@
                 <li class="slider-item">
 
                   <figure class="img-holder" style="--width: 575; --height: 550;">
-                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                    <!-- <img src="./assets/images/pexels-mart-production-7550298.jpg" width="575" height="550" alt="" class="img-cover"> -->
+                    <img src="./assets/images/fotor-ai-20240220133441.jpg" width="575" height="550" alt="" class="img-cover">
                   </figure>
 
                 </li>
@@ -237,136 +271,78 @@
         - #SERVICE
       -->
 
-      <section class="section service" aria-labelledby="service-label">
-        <div class="container">
-
-          <p class="section-subtitle" id="service-label">What We Do?</p>
-
-          <h2 class="h2 section-title">
-            The service we offer is specifically designed to meet your needs.
+     <section class="aboutUs">
+       <div  class="whyUs hiddenLeft">
+        <div id="whyUs-first">
+          
+         <h2 data-lan="whyUsTittle">
+         لماذا نحن ؟
           </h2>
+          <p data-lan="whyUsContent">
+           يعتبر مكتب إبراهيم خوري للمحاماة والإستشارات القانونية الذي تأسس عام
+           2008 بفروعة في دبي وأبو ظبي والعين أحد أكبر المكاتب الرائدة متعددة 
+            التخصصات القانونية في دولة الإمارات العربية المتحدة  كما أن التجارب 
+                    القانونية والقضائية التي مررنا بها علي مدار الأعوام السابقة
+          </p>
+          
+        </div>
+        <div id="whyUs-second"> 
+          
+        <h2  data-lan="whatWeDoTitle">
+          ماذا نقدم ؟
 
-          <ul class="grid-list">
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">24/7 Support</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
-                  justo.
-                </p>
-
-                <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Secure Payments</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
-                  justo.
-                </p>
-
-                <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Daily Updates</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
-                  justo.
-                </p>
-
-                <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Market Research</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
-                  justo.
-                </p>
-
-                <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-          </ul>
+          </h2>
+          <p data-lan="whatWeDo">
+           يعتبر مكتب إبراهيم خوري للمحاماة والإستشارات القانونية الذي تأسس عام
+           2008 بفروعة في دبي وأبو ظبي والعين أحد أكبر المكاتب الرائدة متعددة 
+            التخصصات القانونية في دولة الإمارات العربية المتحدة  كما أن التجارب 
+                    القانونية والقضائية التي مررنا بها علي مدار الأعوام السابقة
+          </p>
 
         </div>
-      </section>
-
+       </div>
+       <div  class="aboutOurOFFICE hiddenRight">
+         <span data-lan="aboutUs" >حولنا_____ </span>
+         <h2 id="aboutOurOfficeTittle" data-lan="aboutOurOfficeTittle"  class="">عن مكاتبنا </h2>
+         <p data-lan="aboutOurOffice">
+يعتبر مكتب إبراهيم خوري للمحاماة والإستشارات القانونية الذي تأسس عام
+2008 بفروعة في دبي وأبو ظبي والعين أحد أكبر المكاتب الرائدة متعددة 
+ التخصصات القانونية في دولة الإمارات العربية المتحدة ، كما أن التجارب 
+         القانونية والقضائية التي مررنا بها علي مدار الأعوام السابقة
+   تساعدنا فى تقديم الإستشارات القانونية متعددة الإختصاصات والقطاعات 
+            المختلفة لعملائنا ، تحتوي الشركة على فريق المحامين 
+     من ذوي الخبرة العالية  والمتخصصين فى مجالات عدة فى القانون
+                       الإتحادي لدولة الإمارات العربية المتحدة
+         </p>
+       </div>
+     </section>
 
 
 
 
       <!-- 
-        - #ABOUT
+        - #ABOUT more
       -->
 
-      <section class="about" aria-labelledby="about-label">
+      <section id="about" class="about" aria-labelledby="about-label">
         <div class="container">
 
-          <figure class="about-banner">
-            <img src="./assets/images/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
+          <figure class="about-banner hiddenLeft">
+            <img class="aboutSectionMore" src="./assets/images/aboutSection.png"  loading="lazy" alt="about banner"
               class="w-100">
           </figure>
 
-          <div class="about-content">
+          <div class="about-content hiddenRight">
 
-            <p class="section-subtitle" id="about-label">Why Choose Us?</p>
-
+            <!-- <p class="section-subtitle" id="about-label">Why Choose Us?</p> -->
+            <p data-lan="whyUsTittle" class="section-subtitle section-subtitle-p" id="about-label">   لماذا نحن ؟</p>
+<!-- 
             <h2 class="h2 section-title">
               We bring solutions to make life easier for our clients.
+            </h2> -->
+            <h2 id="section-subtitle-h2-en" data-lan="ShowContent"class="h2 section-title section-subtitle-h2">
+
+              قيمنا الأساسية هي عرض كل حالة من منظور عاطفي ، وحل النزاعات 
             </h2>
 
             <ul>
@@ -374,18 +350,24 @@
               <li class="about-item">
                 <div class="accordion-card expanded" data-accordion>
 
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
+                  <h3 class="card-title right-paragragh-cont">
+                    <button class="accordion-btn right-paragragh" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">Professional Design</spna>
+                      <!-- <spna class="span h5">Professional Design</spna> -->
+                      <spna data-lan="perfict" class="span h5">محامين متمكنيين</spna>
                     </button>
                   </h3>
 
-                  <p class="accordion-content">
-                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-                    sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
-                    vel.
+                  <!-- <p class="accordion-content">
+                    Elevate your online presence with our professional design, crafted to reflect a polished and
+                    sophisticatedimage. Our designs are tailored to enhance user experience and leave a lasting 
+                    impression.
+                  </p> -->
+                  <p data-lan="perfictContent" class="accordion-content">
+                    لدينا فريق من المدافعين المؤهلين تأهيلا عاليا
+                     والمهنيين في دبي والذين لديهم شغف لمساعدتك بخبراتهم. على مر السنين ،
+                      ساعد فريقنا آلاف العملاء في سعيهم لتحقيق العدالة. .
                   </p>
 
                 </div>
@@ -394,18 +376,26 @@
               <li class="about-item">
                 <div class="accordion-card" data-accordion>
 
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
+                  <h3 class="card-title right-paragragh-cont">
+                    <button class="accordion-btn right-paragragh" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">Top-Notch Support</spna>
+                      <!-- <spna class="span h5">Top-Notch Support</spna> -->
+                      <spna  data-lan="theReady" class="span h5">الجاهزية</spna>
                     </button>
                   </h3>
 
-                  <p class="accordion-content">
-                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-                    sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
-                    vel.
+                  <!-- <p class="accordion-content">
+                    Experience unparalleled customer service with our top-notch support team. Whether you have questions,
+                    concerns, or need assistance, our dedicated support is ready to provide prompt and effective solutions
+                    ensuring a smooth
+
+                  </p> -->
+                  <p data-lan="thereadyContent" class="accordion-content">
+                    نهتم دائما بادق التفاصيل
+                    ونكون مستعدون وجاهزون فى اى وقت 
+                    نسعى لحل النزاعات المعقدة بخبراتنا التى تجاوزت العشر سنوات
+
                   </p>
 
                 </div>
@@ -414,18 +404,23 @@
               <li class="about-item">
                 <div class="accordion-card" data-accordion>
 
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
+                  <h3 class="card-title right-paragragh-cont">
+                    <button class="accordion-btn right-paragragh" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">Exclusive Assets</spna>
+                      <!-- <spna class="span h5">Exclusive Assets</spna> -->
+                      <spna  data-lan="theExperince" class="span h5">الخبرة</spna>
                     </button>
                   </h3>
 
-                  <p class="accordion-content">
-                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-                    sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
-                    vel.
+                  <!-- <p class="accordion-content">
+                    Access a world of exclusive assets designed to set you apart. From unique graphics to premium content,
+                    our exclusive assets add a touch of exclusivity to your projects, helping you stand out in a competitive
+                    landscape.
+                  </p> -->
+                  <p data-lan="theExperinceContent" class="accordion-content">
+                   كل من يعمل فى مكاتبنا هم محامون على اعلى مستوى ولديهم من الخبرة الكثير
+                   مما يؤهلهم ان يبدعوا فى اجاد الحلول
                   </p>
 
                 </div>
@@ -445,288 +440,300 @@
       <!-- 
         - #FEATURE
       -->
-
-      <section class="section feature" aria-labelledby="feature-label">
-        <div class="container">
-
-          <figure class="feature-banner">
-            <img src="./assets/images/feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
-              class="w-100">
-          </figure>
-
-          <div class="feature-content">
-
-            <p class="section-subtitle" id="feautre-label">Our Solutions</p>
-
-            <h2 class="h2 section-title">
-              We make your spending stress-free for you to have the perfect control.
-            </h2>
-
-            <p class="section-text">
-              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus.
-            </p>
-
-            <ul class="feature-list">
-
-              <li>
-                <div class="feature-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <span class="span">
-                    Aenean quam ornare. Curabitur blandit.
-                  </span>
-
+      <section class="our-knowlage">
+        <div>
+          <span data-lan="serviceDown">
+           _____خدماتنا_____
+          </span>
+         <h2 data-lan="exprienceDown" class="">خبرتنا  </h2>
+        </div>
+        <div>
+          <!-- exprienceDown -->
+          <div class="animated-onscrol">
+            <div>
+              <div class="countIcon">
+                <img src="./assets/images/law-icon.png">
                 </div>
-              </li>
-
-              <li>
-                <div class="feature-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <span class="span">
-                    Nullam quis risus eget urna mollis ornare.
-                  </span>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="feature-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <span class="span">
-                    Etiam porta euismod malesuada mollis.
-                  </span>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="feature-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <span class="span">
-                    Vivamus sagittis lacus vel augue rutrum.
-                  </span>
-
-                </div>
-              </li>
-
-            </ul>
-
+            </div>
+            <div>
+              <h3  data-lan="layerGinaai">
+                القانون الجنائى
+              </h3>
+              <p  data-lan="layerGinaaiGinaaiContent">   
+إن القانون الجنائي في دولة الإمارات العربية المتحدة أكثر تعقيداً بكثير ، إذ يحتوي على أحكام وقواعد مستمدة من الشريعة الإسلامية،  فهو مهم جدا للمحامين أن يكونوا على معرفة متعمقة بأحكام...
+              </p>
+            </div>
           </div>
-
+          <div  class="animated-onscrol">
+            <div>
+              <div class="countIcon">
+                <img src="./assets/images/law-icon.png">
+                </div>
+            </div>
+            <div>
+              <h3  data-lan="layerFa">
+                قانون الاسرة الشخصية
+              </h3>
+              <p data-lan="layerFaContent">  
+إن القانون الجنائي في دولة الإمارات العربية المتحدة أكثر تعقيداً بكثير ، إذ يحتوي على أحكام وقواعد مستمدة من الشريعة الإسلامية،  فهو مهم جدا للمحامين أن يكونوا على معرفة متعمقة بأحكام...
+              </p>
+            </div>
+          </div>
+          <div class="animated-onscrol">
+            <div>
+              <div class="countIcon">
+                <img src="./assets/images/law-icon.png">
+                </div>
+            </div>
+            <div>
+              <h3  data-lan="layerGi">
+                القانون الدولى
+              </h3>
+              <p data-lan="layerGiContent">  
+إن القانون الجنائي في دولة الإمارات العربية المتحدة أكثر تعقيداً بكثير ، إذ يحتوي على أحكام وقواعد مستمدة من الشريعة الإسلامية،  فهو مهم جدا للمحامين أن يكونوا على معرفة متعمقة بأحكام...
+              </p>
+            </div>
+          </div>
+          <div class="animated-onscrol ">
+            <div>
+              <div class="countIcon">
+                <img src="./assets/images/law-icon.png">
+                </div>
+            </div>
+            <div>
+              <h3 data-lan="layerImug">
+                قانون الهجرة و الجنسية
+              </h3>
+              <p  data-lan="layerImugContent">  
+إن القانون الجنائي في دولة الإمارات العربية المتحدة أكثر تعقيداً بكثير ، إذ يحتوي على أحكام وقواعد مستمدة من الشريعة الإسلامية،  فهو مهم جدا للمحامين أن يكونوا على معرفة متعمقة بأحكام...
+              </p>
+            </div>
+          </div>
+          <div class="animated-onscrol">
+            <div>
+              <div class="countIcon">
+                <img src="./assets/images/law-icon.png">
+                </div>
+            </div>
+            <div>
+              <h3  data-lan="layerTrade">
+                القانون التجارى
+              </h3>
+              <p data-lan="layerTradeContent">  
+إن القانون الجنائي في دولة الإمارات العربية المتحدة أكثر تعقيداً بكثير ، إذ يحتوي على أحكام وقواعد مستمدة من الشريعة الإسلامية،  فهو مهم جدا للمحامين أن يكونوا على معرفة متعمقة بأحكام...
+              </p>
+            </div>
+          </div>
+          <div class="animated-onscrol">
+            <div>
+              <div class="countIcon">
+                <img src="./assets/images/law-icon.png">
+                </div>
+            </div>
+            <div>
+              <h3  data-lan="layerController">
+                التحكيم
+              </h3>
+              <p data-lan="layerControllerContent">  
+إن القانون الجنائي في دولة الإمارات العربية المتحدة أكثر تعقيداً بكثير ، إذ يحتوي على أحكام وقواعد مستمدة من الشريعة الإسلامية،  فهو مهم جدا للمحامين أن يكونوا على معرفة متعمقة بأحكام...
+              </p>
+            </div>
+          </div>
+  
         </div>
       </section>
-
-
-
-
 
       <!-- 
-        - #STATS
+        - #contact with us for any asking
       -->
+      <section class="contact-for-asking">
+        <!-- <button class="contact">
+          تواصل معانا
+        </button> -->
+        <a  data-lan="contact" href="#service" class="btn btn-primary contactWithUs hiddenLeft">تواصل معنا</a>
+        <p data-lan="contactWithUs" class="hiddenLeft">  
+تحتاج الي أستشارة قانونية؟ تواصل معنا الأن 
+        </p>
 
-      <section class="stats" aria-label="our stats">
-        <div class="container">
-
-          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
-
-            <li>
-              <p class="card-text">
-                <span class="h1">7518</span>
-
-                <spna class="span">Completed Projects</spna>
-              </p>
-            </li>
-
-            <li>
-              <p class="card-text">
-                <span class="h1">3472</span>
-
-                <spna class="span">Happy Customers</spna>
-              </p>
-            </li>
-
-            <li>
-              <p class="card-text">
-                <span class="h1">2184</span>
-
-                <spna class="span">Expert Employees</spna>
-              </p>
-            </li>
-
-            <li>
-              <p class="card-text">
-                <span class="h1">4523</span>
-
-                <spna class="span">Awards Won</spna>
-              </p>
-            </li>
-
-          </ul>
-
-        </div>
       </section>
+      
+      <section class="why-choose-us">
+        <div>
+          <div>
+            <span data-lan="exprienceDown">
+             _____خدماتنا_____
+            </span>
+           <h2 data-lan="exprienceDownOther" class="">خبرتنا  </h2>
+          </div>
+          <div>
+            <div class="why-choose-us-box">
+              <h3 data-lan="whatWeHaveT1">
+                فريق عمل متخصص
+              </h3>
+              <p  data-lan="whatWeHaveC1">   
+إن القانون الجنائي في دولة الإمارات العربية المتحدة أكثر تعقيداً بكثير ، إذ يحتوي على أحكام وقواعد مستمدة من الشريعة الإسلامية متعمقة بأحكام...
+              </p>
+            </div>
+            <div class="why-choose-us-box">
+              <h3 data-lan="whatWeHaveT2">
+                أنت أكثر من مجرد عميل
+              </h3>
+              <p data-lan="whatWeHaveC2">  
+إن القانون الجنائي في دولة الإمارات العربية المتحدة أكثر تعقيداً بكثير ، إذ يحتوي على أحكام وقواعد مستمدة من الشريعة الإسلامية،قة بأحكام...
+              </p>
+            </div>
+            <div class="why-choose-us-box">
+              <h3 data-lan="whatWeHaveT3">
+                تحقيق العدالة
+              </h3>
+              <p data-lan="whatWeHaveC3">  
+إن القانون الجنائي في دولة الإمارات العربية المتحدة أكثر تعقيداً بكثير ، إذ يحتوي على أحكام وقواعد مستمدة من الشريعة الإسلامية،  فهو مهم جدا للمحامين أن يكونوا على معرفة متعمقة بأحكام...
+              </p>
+            </div>
+            <div class="why-choose-us-box">
+              <h3 data-lan="whatWeHaveT4">
+                التفكير الاستراتيجي الفعال
+              </h3>
+              <p data-lan="whatWeHaveC4">  
+إن القانون الجنائي في دولة الإمارات العربية المتحدة أكثر تعقيداً بكثير ، إذ يحتوي على أحكام وقواعد مستمدة من الشريعة الإسلامية،  فهو مهم جدا للمحامين أن يكونوا على معرفة متعمقة بأحكام...
+              </p>
+            </div>
+  
+          </div>
+        </div>
+        <section class="aboutOurTeam">
+          <div class="aboutOurTeamCont">
+            <span  data-lan="team" class="spicial-p">
+             ______الفريق_____
+            </span>
+           <h2  data-lan="ourTeam" >
+            فريق عملنا
+             </h2>
+          </div>
+        </section>
+      </section>
+      <section class="containerOurTeam">
+        <div class="card__container swiper">
+           <div class="card__content">
+              <div class="swiper-wrapper">
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/images/hero-slide-1.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Kell Dawx</h3>
+                       <p class="card__description">
+                          Passionate about development and design, 
+                          I carry out projects at the request of users.
+                       </p>
+     
+                       <a href="#" class="card__button">View More</a>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/images/hero-slide-1.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Lotw Fox</h3>
+                       <p class="card__description">
+                          Passionate about development and design, 
+                          I carry out projects at the request of users.
+                       </p>
+     
+                       <a href="#" class="card__button">View More</a>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/images/hero-slide-1.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Sara Mit</h3>
+                       <p class="card__description">
+                          Passionate about development and design, 
+                          I carry out projects at the request of users.
+                       </p>
+     
+                       <a href="#" class="card__button">View More</a>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/images/hero-slide-1.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Jenny Wert</h3>
+                       <p class="card__description">
+                          Passionate about development and design, 
+                          I carry out projects at the request of users.
+                       </p>
+     
+                       <a href="#" class="card__button">View More</a>
+                    </div>
+                 </article>
 
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/images/hero-slide-1.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Lexa Kin</h3>
+                       <p class="card__description">
+                          Passionate about development and design, 
+                          I carry out projects at the request of users.
+                       </p>
+     
+                       <a href="#" class="card__button">View More</a>
+                    </div>
+                 </article>
+              </div>
+           </div>
 
-
-
+           <!-- Navigation buttons -->
+           <div class="swiper-button-next">
+              <img class="iconTrans iconTransLeft" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNBHlHFcJJOmqHCQDSdhi__KZFdjUwZ-O3rA&usqp=CAU">
+            </div>
+            
+            <div class="swiper-button-prev">              
+              <img class="iconTrans iconTransRight" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3KRFYOQYJvcbJ3z8d58b7ozLv9J9PLYJk-A&usqp=CAU">
+      
+           </div>
+           <!-- Pagination -->
+           <div class="swiper-pagination"></div>
+        </div>
+     </section>
+     
 
       <!-- 
-        - #PROJECT
+        - #our location
       -->
-
-      <section class="section project" aria-labelledby="project-label">
-        <div class="container">
-
-          <p class="section-subtitle" id="project-label">Case Studies</p>
-
-          <h2 class="h2 section-title">
-            Check out some of our awesome projects with creative ideas and great design.
-          </h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                  <img src="./assets/images/blog-1.jpg" width="560" height="350" loading="lazy"
-                    alt="Ligula tristique quis risus" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Ligula tristique quis risus</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
-                    imperdiet nun eu dolor.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="meta-text" datetime="2022-04-14">14 Apr 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="meta-text">Coding</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                  <img src="./assets/images/blog-2.jpg" width="560" height="350" loading="lazy"
-                    alt="Nullam id dolor elit id nibh" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Nullam id dolor elit id nibh</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
-                    imperdiet nun eu dolor.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="meta-text" datetime="2022-03-29">29 Mar 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="meta-text">Workspace</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                  <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy"
-                    alt="Ultricies fusce porta elit" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Ultricies fusce porta elit</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
-                    imperdiet nun eu dolor.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="meta-text">Meeting</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
+      <section class="aboutOurTeam">
+        <div class="aboutOurTeamCont">
+          <span data-lan="ourLOcation">
+           موقعنا
+          </span>
+         <h2 data-lan="ourLOcationReach">
+يمكنك الوصول لموقعنا من هنا   
+        </h2>
         </div>
       </section>
-
-
+     <section class="ourLocation">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.5559476063045!2d39.6672689850049!3d24.46618698424128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bd95908cafd5a3%3A0xfc82444a2ef3593d!2zMjM3MyDYt9ix2YrZgiDYp9mE2YXZhNmDINi52KjYr9in2YTZhNmHINin2YTZgdix2LnZitiMIDc2MzPYjCDYrdir2YXYjCA3NjMz2Iwg2KfZhNmF2K_ZitmG2Kkg2KfZhNmF2YbZiNix2KkgNDIzNjPYjCDYp9mE2LPYudmI2K_Zitip!5e0!3m2!1sar!2seg!4v1708605981953!5m2!1sar!2seg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </section>
 
 
 
@@ -734,18 +741,7 @@
         - #CTA
       -->
 
-      <section class="cta" aria-label="call to action">
-        <div class="container">
-
-          <h2 class="h2 section-title">
-            Join our community by using our services and grow your business.
-          </h2>
-
-          <a href="#" class="btn btn-primary">Try it For Free</a>
-
-        </div>
-      </section>
-
+     
     </article>
   </main>
 
@@ -762,12 +758,16 @@
 
       <div class="footer-brand">
 
-        <a href="#" class="logo">
+        <!-- <a href="#" class="logo">
           <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
-        </a>
+        </a> -->
+        <span class="logo-text logo-text-footer">
+          الانجاز العاجل
+        </span>
+        
 
         <p class="footer-text">
-          &copy; 2022 codewithsadee. <br> All rights reserved.
+          &copy; 2024 ahmed abd elmohsen. <br> All rights reserved.
         </p>
 
         <ul class="social-list">
@@ -814,16 +814,16 @@
 
         <li>
           <address class="footer-text">
-            Moonshine St. 14/05 Light City, London, United Kingdom
+            28 Avenue Ahmed Lotfy - New Nozha - in front of National Bank Of Egypt
           </address>
         </li>
 
         <li>
-          <a href="mailto:info@email.com" class="footer-link">info@email.com</a>
+          <a href="info@primecode-dev.com" class="footer-link"> info@primecode-dev.com </a>
         </li>
 
         <li>
-          <a href="tel:001234567890" class="footer-link">00 (123) 456 78 90</a>
+          <a href="HTTPs://wa.me/0226229733" class="footer-link">0226229733</a>
         </li>
 
       </ul>
@@ -839,11 +839,11 @@
         </li>
 
         <li>
-          <a href="#" class="footer-link">Our Story</a>
+          <a href="#" class="footer-link">Our service</a>
         </li>
 
         <li>
-          <a href="#" class="footer-link">Projects</a>
+          <a href="#" class="footer-link">why us</a>
         </li>
 
         <li>
@@ -882,13 +882,20 @@
   <!-- 
     - custom js link
   -->
+  <script src="assets/js/swiper-bundle.main.js"></script>
   <script src="./assets/js/script.js"></script>
 
   <!-- 
     - ionicon
   -->
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+   <!--=============== SWIPER JS ===============-->
+
+   <!--=============== MAIN JS ===============-->
+   <!-- <script src="assets/js/main.js"></script> -->
 
 </body>
 
