@@ -147,11 +147,12 @@ for (let i = 0, len = accordions.length; i < len; i++) { initAccordion(accordion
 const hiddenLeft = document.querySelectorAll('.hiddenLeft')
 const hiddenRight = document.querySelectorAll('.hiddenRight')
 const animatedOnscrolContact = document.querySelectorAll('.animated-onscrol-contact')
+const whychooseusboxAnimatedOpacity = document.querySelectorAll('.why-choose-us-box')
 
 
 const observer = new IntersectionObserver ((entries, observer)=> {
   entries.forEach((entry=>{
-    console.log(entry)
+    // console.log(entry)
     if(entry.isIntersecting){
 
             
@@ -180,6 +181,37 @@ animatedOnscrolContact.forEach((el)=>{
 
 
 
+const observeOpacity = new IntersectionObserver ((entries, observer)=> {
+  entries.forEach((entry=>{
+    console.log(entry)
+    if(entry.isIntersecting){
+        entry.target.classList.add('animatedOpacity')
+        console.log(entry.target)
+        
+        
+      }
+      else{
+        entry.target.classList.remove('animatedOpacity')
+        console.log(entry.target)
+
+
+    }
+  }))
+})
+
+
+
+whychooseusboxAnimatedOpacity.forEach((el)=>{
+  observeOpacity.observe(el)
+  // console.log(el)
+})
+
+
+
+
+
+
+
 const animatedOnscrol = document.querySelectorAll('.animated-onscrol')
 const Options = {
   rootMargin: "280px",
@@ -191,7 +223,7 @@ const Options = {
 
 const observe = new IntersectionObserver ((entries, observer)=> {
   entries.forEach((entry=>{
-    console.log(entry)
+    // console.log(entry)
     if(entry.isIntersecting){
         entry.target.classList.add('animated-box')
 
@@ -232,7 +264,7 @@ let swiperCards = new Swiper(".card__content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
+  
   breakpoints:{
     600: {
       slidesPerView: 2,
@@ -260,6 +292,7 @@ const lan ={
     whatWeDo: "يعتبر مكتب إبراهيم خوري للمحاماة والإستشارات القانونية الذي تأسس عام2008 بفروعة في دبي وأبو ظبي والعين أحد أكبر المكاتب الرائدة متعددة  التخصصات القانونية في دولة الإمارات العربية المتحدة  كما أن التجارب  القانونية والقضائية التي مررنا بها علي مدار الأعوام السابقة",
     aboutOurOffice: "يعتبر مكتب إبراهيم خوري للمحاماة والإستشارات القانونية الذي تأسس عام2008 بفروعة في دبي وأبو ظبي والعين أحد أكبر المكاتب الرائدة متعددة  التخصصات القانونية في دولة الإمارات العربية المتحدة  كما أن التجارب  القانونية والقضائية التي مررنا بها علي مدار الأعوام السابقة",
     aboutUs: "حولنا___",
+    aboutUsNav: " اقرا عنا",
     aboutOurOfficeTittle: "عن مكاتبنا",
     whyUsTittle: " لماذا نحن ؟",
     whatWeDoTitle: "ماذا نقدم ؟",
@@ -298,6 +331,30 @@ const lan ={
     ourLOcationReach: "يمكنك الوصول لموقعنا من هنا",
     ourTeam: "فريق عملنا",
     team: "______الفريق_____",
+    view: "تواصل معنا",
+    name1: "ali",
+    name2: "said",
+    name3: "khalid",
+    name4: "ali",
+    name5: "ahmed",
+    info1: "حاصل على بكالوريس من جامعة هارفرد الامريكية على أحكام وقواعد مستمدة من الشريعة" ,
+    info2: "حاصل على بكالوريس من جامعة هارفرد الامريكية على أحكام وقواعد مستمدة من الشريعة" ,
+    info3: " حاصل على بكالوريس من جامعة هارفرد الامريكية  على أحكام وقواعد مستمدة من الشريعة",
+    info4: "حاصل على بكالوريس من جامعة هارفرد الامريكية على أحكام وقواعد مستمدة من الشريعة",
+    info5: "حاصل على بكالوريس من جامعة هارفرد الامريكية على أحكام وقواعد مستمدة من الشريعة" ,
+    Privacy: " ماذا عن الامان  ",
+    LearnMore: " اعرف المزيد    ",
+    GetinTouch: "ابقى على تواصل",
+    TermsofUse: " شروط الاستخدام",
+    Subscribe: "اشترك في النشرة الإخبارية لدينا للحصول على أخبارنا وعروضنا التي يتم توصيلها إليك.",
+    OurNewsletter: " نشرتنا الاخبارية ",
+    Join: "انضم",
+    address: "28 شارع احمد لطفي - النزهة الجديدة - امام البنك الاهلي المصري",
+
+    
+
+
+    
 
   },
   En:{
@@ -352,39 +409,51 @@ const lan ={
     ourLOcationReach: "you can reach our location ",
     ourTeam: "our team",
     team: "____team_____",
-
-    
-    
+    view: "contact with us",
+    name1: "ali",
+    name2: "said",
+    name3: "khalid",
+    name4: "ali",
+    name5: "ahmed",
+    info1: "the criminal law in the United Arab Emirates is much more complex",
+    info2: "the criminal law in the United Arab Emirates is much more complex",
+    info3: "the criminal law in the United Arab Emirates is much more complex",
+    info4: "the criminal law in the United Arab Emirates is much more complex",
+    info5: "the criminal law in the United Arab Emirates is much more complex",
+    aboutUsNav: " about us ",
+    Privacy: " Privacy Policy ",
+    LearnMore: "Learn More",
+    GetinTouch: "Get in Touch",
+    TermsofUse: "Terms of Use",
+    Subscribe: "Subscribe to our newsletter to get our news & deals delivered to you.",
+    OurNewsletter: " Our Newsletter  ",
+    Join: "Join",
+    address: "28 Avenue Ahmed Lotfy - New Nozha - in front of National Bank Of Egypt"
+   
   }
 }
 
 let selectorLanguage = document.getElementById("language-change")
 let navbarlist = document.getElementById("navbar-list")
-// let logotextlight = document.getElementById("logo-text-light")
-// let logotextdark = document.getElementById("logo-text-dark")
 let logo = document.querySelectorAll(".logo-text")
 
 function lannguageChossed(){
-  // console.log(selectorLanguage.value)
   // in localStorage
   localStorage.setItem("ourLangauge", selectorLanguage.value);
   // reload
-  // console.log(localStorage.getItem('ourLangauge'))
   location.reload()
 
 }
 
 function changePage(){
   let nodes = document.querySelectorAll("[data-lan]")
-  let allElement = document.querySelectorAll(".our-knowlage >div:nth-child(2) >div >div:nth-child(2) h3, .why-choose-us-box h3,.our-knowlage >div:nth-child(2) >div >div:nth-child(2) p ")
+  let allElement = document.querySelectorAll(".our-knowlage >div:nth-child(2) >div >div:nth-child(2) h3, .why-choose-us-box h3,.our-knowlage >div:nth-child(2) >div >div:nth-child(2) p, .why-choose-us-box p ")
 
-  // console.log(nodes)
   let i = nodes.length 
   let j= 0
 
   while(i--){
     let key = nodes[i].getAttribute("data-lan")
-    // console.log(key)
     nodes[i].innerHTML = lan[localStorage.getItem('ourLangauge')][key]
   }
   if(localStorage.getItem('ourLangauge')==="En"){
@@ -406,7 +475,6 @@ function changePage(){
     document.querySelectorAll(".section-subtitle-p,.section-subtitle-h2")[0].style.textAlign = "start";
     
     // about our office
-    // document.querySelectorAll(".aboutOurOfficeTittle")[0].style.marginLeft = "-320px";
     document.getElementById("aboutOurOfficeTittle").classList.add("aboutOurOfficeTittle")
     
     // show
@@ -449,7 +517,6 @@ function changePage(){
     document.querySelectorAll(".section-subtitle-p,.section-subtitle-h2")[0].style.textAlign = "end";
     
     // about our office
-    // document.querySelectorAll(".aboutOurOFFICE h2")[0].style.marginLeft = "320px";
     document.getElementById("aboutOurOfficeTittle").classList.remove("aboutOurOfficeTittle")
     
     

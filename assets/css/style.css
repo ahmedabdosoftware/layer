@@ -917,12 +917,20 @@ border: hotpink ;
 }
 .our-knowlage >div:nth-child(2) >div >div:nth-child(2) p ,.why-choose-us-box p, .aboutOurTeamCont span{
   width: 250px;
-  /* background-color: red; */
   font-weight: 600;
   font-size: 17px;
   text-align: end;
   margin-right: 30px;
 }
+.why-choose-us-box{
+  opacity: 0 !important;
+  transition: opacity 2s ease-out !important;
+}
+/* animatedOpacity */
+.animatedOpacity{
+  opacity: 1 !important;
+}
+
 .our-knowlage >div:nth-child(2) >div >div:nth-child(2) h3, .why-choose-us-box h3, .aboutOurTeamCont h2{
   /* background-color: rgb(158, 93, 93); */
   width: 250px;
@@ -1406,7 +1414,7 @@ border: hotpink ;
   }
   
   .why-choose-us >div {
-    background-color: rgb(9, 123, 158) !important;
+    /* background-color: rgb(9, 123, 158) !important; */
     margin-top: 0px !important;
   }
 
