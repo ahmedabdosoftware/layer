@@ -264,6 +264,10 @@ let swiperCards = new Swiper(".card__content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   
   breakpoints:{
     600: {

@@ -448,10 +448,9 @@ body.nav-active { overflow: hidden; }
   font-size: 24px;
   font-weight: 600;
   /* background-color: rgb(78, 56, 56); */
-  /* background-color: red; */
   position: absolute;
   right: 80px;
-  top: 27px;
+  top: 0px;
   
 }
 /* arabic to english */
@@ -1370,7 +1369,7 @@ border: hotpink ;
 
 @media (max-width: 450px) {
 
- 
+
   .contact-for-asking{
     flex-direction: column;
     
